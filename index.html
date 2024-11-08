@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>TODO</title>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>TO-DO</h1>
+        <form>
+            <input type="text" name="todo" id="todo" placeholder="Enter a task" required />
+            <input type="date" name="date" id="date" required />
+            <select name="priority" id="priority" required>
+                <option value="" disabled selected>Select priority</option>
+                <option value="priority">Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button id="add-todo" type="button">ADD TODO</button>
+        </form>
+
+        <div class="today-todo">
+            <h2>To-Do List</h2>
+            <ul id="todo-list">
+                <!-- <li>
+                    <p>1. Make Resume</p>
+                    <p>08/11/2024</p>
+                    <p>High</p>
+                    <div class="check-dlt-btns">
+                        <p id="complete-btn"><i class="fa-solid fa-square-check"></i></p>
+                        <p id="dlt-btn"><i class="fa-solid fa-trash"></i></p>
+                    </div>
+                    
+                </li> -->
+            </ul>
+        </div>
+        <div class="future-todo">
+            <h2>Future To-Do</h2>
+            <ul id="future-list">
+                <!-- <li>
+                    <p>1. Make Resume</p>
+                    <p>09/11/2024</p>
+                    <p>High</p>
+                    <div class="check-dlt-btns">
+                        <p id="complete-btn"><i class="fa-solid fa-square-check"></i></p>
+                        <p id="dlt-btn"><i class="fa-solid fa-trash"></i></p>
+                    </div>
+                    
+                </li> -->
+            </ul>
+        </div>
+        <div class="completed-todo">
+            <h2>Completed To-Do</h2>
+            <ul id="completed-list">
+                <!-- <li>
+                    <p>1. Make Resume</p>
+                    <p>09/11/2024</p>
+                    <p>High</p>
+                    <div class="check-dlt-btns">
+                        <p id="dlt-btn"><i class="fa-solid fa-trash"></i></p>
+                    </div>
+                    
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
